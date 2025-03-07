@@ -1,31 +1,36 @@
 import React from "react";
 
-//import stock
+/*import stock
 import stock from "../img/image1.jpg";
 import stock1 from "../img/image2.jpg";
 import stock2 from "../img/image3.jpg";
 import stock3 from "../img/image4.jpg";
 import stock4 from "../img/image5.jpg";
-import stock5 from "../img/image6.jpg";
+import stock5 from "../img/image6.jpg";*/
 
 class Portfolio extends React.Component {
   render() {
     return (
       <section id="work" className="portfolio-mf sect-pt4 route">
-        <div className="container">
+        <div className="container"style={{ marginBottom: "50px" }}>
           <div className="row">
             <div className="col-sm-12">
               <div className="title-box text-center">
                 <h3 className="title-a">Portfolio</h3>
                 <p className="subtitle-a">
-                  Incididunt nostrud id aute culpa excepteur pariatur consequat
-                  elit culpa nulla enim anim incididunt.
+                Turning ideas into reality—here’s a glimpse of the projects I’ve built, each crafted with precision, creativity, and a problem-solving mindset.
                 </p>
                 <div className="line-mf"></div>
               </div>
             </div>
           </div>
           <div className="row">
+            <div className="col-sm-12 text-center">
+              <h4>Coming soon...</h4>
+            </div>
+          </div>
+
+          {/*<div className="row">
             <div className="col-md-4">
               <div className="work-box">
                 <a href={stock} data-lightbox="gallery-vmarine">
@@ -35,7 +40,7 @@ class Portfolio extends React.Component {
                   <div className="work-content">
                     <div className="row">
                       <div className="col-sm-8">
-                        <h2 className="w-title">Lorem Ipsum</h2>
+                        <h2 className="w-title">flying car</h2>
                         <div className="w-more">
                           <span className="w-ctegory">
                             HTML5 CSS3 Bootstrap ReactJS
@@ -164,7 +169,7 @@ class Portfolio extends React.Component {
                             HTML5 CSS3 Bootstrap Webpack ReactJS
                           </span>
                           {/*} / <span className="w-date">18 Sep. 2018</span>*/}
-                        </div>
+                       {/* </div>
                       </div>
                       <div className="col-sm-4">
                         <div className="w-like">
@@ -392,7 +397,7 @@ class Portfolio extends React.Component {
                 </a>
               </div>
             </div>
-          </div>
+          </div>*/}
         </div>
       </section>
     );

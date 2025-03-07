@@ -23,6 +23,7 @@ import * as serviceWorker from './serviceWorker';
 import Navbar from './components/navbar.jsx';
 import Intro from './components/intro.jsx';
 import About from './components/about.jsx';
+import Education from './components/Education.jsx';
 import Portfolio from './components/portfolio.jsx';
 import Contact from './components/contact.jsx';
 import BackToTop from './components/back-top.jsx';
@@ -35,6 +36,7 @@ ReactDOM.render(
         <Navbar />
         <Intro />
         <About />
+        <Education/>
         <Portfolio />
         <Contact />
         <BackToTop />

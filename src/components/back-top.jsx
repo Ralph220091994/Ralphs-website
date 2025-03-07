@@ -20,9 +20,14 @@ class BackToTop extends React.Component {
         });
     }
 
-    render(){
-        return <a href="#" className="back-to-top animated"><i className="fa fa-chevron-up"></i></a>;
+    render() {
+        return (
+            <button className="back-to-top animated">
+                <i className="fa fa-chevron-up"></i>
+            </button>
+        );
     }
+    
 }
 
 export default BackToTop;

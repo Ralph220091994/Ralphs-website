@@ -1,60 +1,37 @@
 import React from "react";
-import myImage from "../img/myImage.png";
+
 
 class About extends React.Component {
   constructor() {
     super();
     this.state = {
       skills: [
-        { id: "HTML5_skill", content: "HTML5", porcentage: "80%", value: "80" },
-        { id: "CSS3_skill", content: "CSS3", porcentage: "75%", value: "75" },
-        {
-          id: "JavaScript_skill",
-          content: "JavaScript",
-          porcentage: "90%",
-          value: "90"
-        },
-        { id: "PHP_skill", content: "PHP", porcentage: "70%", value: "70" },
-        {
-          id: "ReactJS_skill",
-          content: "ReactJS",
-          porcentage: "80%",
-          value: "80"
-        },
-        {
-          id: "Python_skill",
-          content: "Python",
-          porcentage: "75%",
-          value: "75"
-        },
-        {
-          id: "VanillaJS_skill",
-          content: "VanillaJS",
-          porcentage: "85%",
-          value: "85"
-        },
-        {
-          id: "Wordpress_skill",
-          content: "Wordpress",
-          porcentage: "80%",
-          value: "80"
-        }
-      ],
-      about_me: [
+        { id: "MongoDB", content: "MongoDB", porcentage: "60%", value: "60" },
+        { id: "JavaScript_skill", content: "JavaScript", porcentage: "70%", value: "70" },
+        { id: "PHP_skill", content: "PHP", porcentage: "50%", value: "50" },
+        { id: "ReactJS_skill", content: "ReactJS", porcentage: "75%", value: "75" },
+        { id: "Python_skill", content: "Python", porcentage: "30%", value: "30" },
+        { id: "NodeJs", content: "NodeJs", porcentage: "60%", value: "60" }
+      ].sort((a, b) => b.value - a.value),
+
+      aboutMeData: [
         {
           id: "first-p-about",
+          title: "Frontend Developer",
           content:
-            "Lorem ipsum pariatur consectetur laboris occaecat nulla aliqua irure ad deserunt duis. Eiusmod nulla cupidatat labore sint sit aute dolore irure nostrud ut incididunt. Anim laborum reprehenderit labore magna ut dolore quis irure. Labore ea duis deserunt ullamco irure fugiat deserunt ut nisi ea minim proident. Nisi consectetur do non magna duis aliqua minim minim veniam. In occaecat minim qui consequat elit mollit consectetur non id tempor. Amet adipisicing occaecat tempor culpa quis est duis."
+            "A creative Frontend Developer skilled in JavaScript, React, and modern UI frameworks. Experienced in building responsive, user-friendly interfaces and ensuring smooth performance across devices. Passionate about enhancing user experience through clean design and interactive features."
         },
         {
           id: "second-p-about",
+          title: "Backend Developer",
           content:
-            "Lorem ipsum pariatur consectetur laboris occaecat nulla aliqua irure ad deserunt duis. Eiusmod nulla cupidatat labore sint sit aute dolore irure nostrud ut incididunt. Anim laborum reprehenderit labore magna ut dolore quis irure. Labore ea duis deserunt ullamco irure fugiat deserunt ut nisi ea minim proident. Nisi consectetur do non magna duis aliqua minim minim veniam. In occaecat minim qui consequat elit mollit consectetur non id tempor. Amet adipisicing occaecat tempor culpa quis est duis."
+            "A Backend Developer specializing in Node.js, MongoDB, and API development. Experienced in building secure, scalable server-side applications, optimizing database performance, and integrating frontend systems through RESTful APIs. Focused on efficiency, security, and seamless data flow."
         },
         {
           id: "third-p-about",
+          title: "Technical Writer",
           content:
-            "Lorem ipsum pariatur consectetur laboris occaecat nulla aliqua irure ad deserunt duis. Eiusmod nulla cupidatat labore sint sit aute dolore irure nostrud ut incididunt. Anim laborum reprehenderit labore magna ut dolore quis irure. Labore ea duis deserunt ullamco irure fugiat deserunt ut nisi ea minim proident. Nisi consectetur do non magna duis aliqua minim minim veniam. In occaecat minim qui consequat elit mollit consectetur non id tempor. Amet adipisicing occaecat tempor culpa quis est duis."
+            "A detail-oriented Technical Writer skilled in creating clear, concise documentation for software products. Experienced in writing API guides, user manuals, and developer documentation. Passionate about making complex technical concepts easy to understand."
         }
       ]
     };
@@ -86,7 +63,6 @@ class About extends React.Component {
                       </div>
                     </div>
                     <div className="skill-mf">
-                      {/* <p className="title-s">Skill</p> */}
                       {this.state.skills.map(skill => {
                         return (
                           <React.Fragment key={skill.id}>
@@ -114,11 +90,12 @@ class About extends React.Component {
                       <div className="title-box-2">
                         <h5 className="title-left">About Me</h5>
                       </div>
-                      {this.state.about_me.map(content => {
+                      {this.state.aboutMeData.map(content => {
                         return (
-                          <p className="lead" key={content.id}>
-                            {content.content}
-                          </p>
+                          <div key={content.id}>
+                            <h6 className="title-left"style={{ fontSize: "14px", fontWeight: "bold" }}>{content.title}</h6>
+                            <p className="lead">{content.content}</p> 
+                          </div>
                         );
                       })}
                     </div>
@@ -128,6 +105,7 @@ class About extends React.Component {
             </div>
           </div>
         </div>
+      
       </section>
     );
   }

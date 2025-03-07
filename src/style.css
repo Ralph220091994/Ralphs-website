@@ -998,3 +998,100 @@ BUTTON
     bottom: 15px;
   }
 }
+.education-mf {
+  background-color: #f5f5f5;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.education-icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+.education-info {
+  margin-top: 20px;
+}
+
+.degree-details {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.education-text h6 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.education-text p {
+  font-size: 16px;
+  color: #666;
+}
+
+.qualification-details h6 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.qualification-details ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+.education-timeline h6 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.education-timeline ul {
+  padding-left: 20px;
+}
+
+.education-timeline li {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+.pdf-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  position: relative;
+  background-color: white;
+  padding: 20px;
+  max-width: 90%;
+  max-height: 90%;
+  overflow: auto;
+  z-index: 1001;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
